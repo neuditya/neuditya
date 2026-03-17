@@ -1,22 +1,22 @@
-# Hi, I'm Aditya Neupane <img src="https://raw.githubusercontent.com/neuditya/neuditya/refs/heads/main/pp.gif" width="70" style="border-radius:50%; vertical-align:middle; margin-left:10px;" />
+# Hi, I'm Aditya Neupane <img src="https://raw.githubusercontent.com/neuditya/neuditya/refs/heads/main/pp.gif" width="80" style="border-radius:50%; vertical-align:middle; margin-left:10px;" />
 
 ### Fluent in C++, Python, and the smell of burnt solder
 
-[![Read in Nepali](https://img.shields.io/badge/Read-in_Nepali-orange?style=for-the-badge)](README_nepali.md)
+[![Read in Nepali](https://img.shields.io/badge/Read-in_Nepali-orange?style=for-the-badge&logoColor=white)](README_nepali.md)
 
 ---
 
 ## 🧰 Skills
 <div style="display:flex; flex-wrap: wrap; gap:10px; justify-content:center;">
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="45" title="C++" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="45" title="Arduino" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" title="Python" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="50" title="C++" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" width="50" title="Arduino" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" title="Python" />
 <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white" width="80" title="Illustrator" />
 <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" width="80" title="Photoshop" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="45" title="Figma" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="50" title="Figma" />
 <img src="https://img.shields.io/badge/Fusion%20360-ED1C24?style=for-the-badge&logo=autodesk&logoColor=white" width="80" title="Fusion 360" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" width="45" title="Blender" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" width="50" title="Blender" />
 
 </div>
 
@@ -53,7 +53,7 @@
 
 ---
 
-## 👀 Visitors Count
+##  Visitors Count
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=neuditya&color=brightgreen&style=for-the-badge" />
 </div>
