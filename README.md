@@ -3,6 +3,7 @@
 ### Fluent in C++, Python, and the smell of burnt solder
 
 [![नेपालीमा पढ्नुहोस्](https://img.shields.io/badge/नेपालीमा_पढ्नुहोस्-333?style=flat-square&logo=googletranslate&logoColor=white)](README_nepali.md)
+
 ---
 
 ## Skills
@@ -33,22 +34,18 @@
 ---
 
 ## Connect with Me
-<div style="display:flex; gap:8px; flex-wrap: wrap; justify-content:center; align-items:center;">
-
+<div align="center">
 <a href="https://www.linkedin.com/in/adityaneupane/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" width="110" />
 </a>
 <a href="https://www.instagram.com/neuditya" target="_blank">
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" width="110" />
 </a>
-<a href="https://neuditya.vercel.app/" target="_blank" style="text-decoration: none; display: flex; align-items: center;">
-  <img src="https://raw.githubusercontent.com/neuditya/neuditya/refs/heads/main/pp.png" width="32" style="margin-right: -4px; z-index: 1; position: relative;" />
+<a href="https://neuditya.vercel.app/" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge" width="100" />
 </a>
-<a href="mailto:adityaneupane2007@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" width="110" />
-</a>
 
+adityaneupane2007@gmail.com
 </div>
 
 ---
