@@ -2,7 +2,7 @@
 
 ### Fluent in C++, Python, and the smell of burnt solder
 
-[![Read in Nepali](https://img.shields.io/badge/Read-in_Nepali-orange?style=for-the-badge&logoColor=white)](README_nepali.md)
+[![नेपालीमा पढ्नुहोस्](https://img.shields.io/badge/नेपालीमा_पढ्नुहोस्-orange?style=for-the-badge)](README_nepali.md)
 
 ---
 
