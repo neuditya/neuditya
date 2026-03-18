@@ -1,88 +1,74 @@
-const tracks = [
-  { name: "1974 AD - CROSSINGS", file: "Songs/1974-AD-CROSSINGS.mp3" },
-  { name: "Kicktracks - Midnight Lovers", file: "Songs/Kicktracks-Midnight-Lovers.mp3" },
-  { name: "Samjhinu Hai - Astha Tamang-Maskey", file: "Songs/Samjhinu-Hai-Astha-Tamang-Maskey.mp3" },
-  { name: "Tajdar-e-Haram - Atif Aslam", file: "Songs/Tajdar-e-Haram-Atif-Aslam.mp3" },
-  { name: "Zakir - Naalayak", file: "Songs/Zakir-Naalayak.mp3" }
-];
-
-const trackSelect = document.getElementById('trackSelect');
-const audioPlayer = document.getElementById('audioPlayer');
-const trackName = document.getElementById('trackName');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const playPauseBtn = document.getElementById('playPauseBtn');
-const vinyl = document.querySelector('.vinyl');
-
-let currentIndex = 0;
-let isPlaying = false;
-
-// Populate dropdown
-tracks.forEach((track, index) => {
-  const option = document.createElement('option');
-  option.value = index;
-  option.text = track.name;
-  trackSelect.appendChild(option);
-});
-
-// Load track
-function loadTrack(index) {
-  currentIndex = index;
-  audioPlayer.src = tracks[currentIndex].file;
-  trackName.textContent = `Now Playing: ${tracks[currentIndex].name}`;
-  trackSelect.value = index;
-  if(isPlaying) audioPlayer.play();
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-// Play/Pause toggle
-playPauseBtn.addEventListener('click', () => {
-  if(audioPlayer.paused){
-    audioPlayer.play();
-  } else {
-    audioPlayer.pause();
-  }
-});
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
 
-audioPlayer.addEventListener('play', () => {
-  isPlaying = true;
-  playPauseBtn.textContent = "⏸ Pause";
-  vinyl.classList.add('spinning');
-});
+.vinyl-container {
+  margin: 20px 0;
+}
 
-audioPlayer.addEventListener('pause', () => {
-  isPlaying = false;
-  playPauseBtn.textContent = "▶ Play";
-  vinyl.classList.remove('spinning');
-});
+.vinyl {
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s linear;
+}
 
-// Previous/Next
-prevBtn.addEventListener('click', () => {
-  let newIndex = currentIndex - 1;
-  if(newIndex < 0) newIndex = tracks.length - 1;
-  loadTrack(newIndex);
-  audioPlayer.play();
-});
+.spinning {
+  animation: spin 3s linear infinite;
+}
 
-nextBtn.addEventListener('click', () => {
-  let newIndex = currentIndex + 1;
-  if(newIndex >= tracks.length) newIndex = 0;
-  loadTrack(newIndex);
-  audioPlayer.play();
-});
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
-// Dropdown change
-trackSelect.addEventListener('change', () => {
-  loadTrack(Number(trackSelect.value));
-  audioPlayer.play();
-});
+#trackName {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
 
-// Auto next track
-audioPlayer.addEventListener('ended', () => {
-  let nextIndex = currentIndex + 1;
-  if(nextIndex >= tracks.length) nextIndex = 0;
-  loadTrack(nextIndex);
-  audioPlayer.play();
-});
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
 
-// Initialize first track
-loadTrack(0);
+.controls button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  background: #1db954;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background: #1ed760;
+}
+
+/* Visualizer bars */
+#visualizer {
+  display: block;
+  margin-top: 20px;
+  background: #000;
+  border-radius: 5px;
+}
