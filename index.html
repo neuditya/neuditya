@@ -6,21 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎧 Aditya's Playlist</h1>
+  <div class="container">
+    <h1>🎶 Aditya's Playlist</h1>
 
-  <div class="player">
-    <select id="trackSelect">
-      <option value="Songs/1974 AD - CROSSINGS .mp3">1974 AD - CROSSINGS</option>
-      <option value="Songs/Kicktracks - Midnight Lovers.mp3">Kicktracks - Midnight Lovers</option>
-      <option value="Songs/Samjhinu Hai - Astha Tamang-Maskey (youtube).mp3">Samjhinu Hai - Astha Tamang-Maskey</option>
-      <option value="Songs/Tajdar-e-Haram Atif Aslam - Coke Studio .mp3">Tajdar-e-Haram - Atif Aslam</option>
-      <option value="Songs/Zakir - Naalayak.mp3">Zakir - Naalayak</option>
-    </select>
+    <!-- Vinyl GIF -->
+    <div class="vinyl-container">
+      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Vinyl" class="vinyl">
+    </div>
 
-    <audio id="audioPlayer" controls>
-      <source src="Songs/1974 AD - CROSSINGS .mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <!-- Track info -->
+    <div id="trackName">Now Playing: </div>
+
+    <!-- Dropdown to select track -->
+    <select id="trackSelect"></select>
+
+    <!-- Audio controls -->
+    <div class="controls">
+      <button id="prevBtn">⏮ Previous</button>
+      <button id="playPauseBtn">▶ Play</button>
+      <button id="nextBtn">⏭ Next</button>
+    </div>
+
+    <audio id="audioPlayer"></audio>
   </div>
 
   <script src="script.js"></script>
